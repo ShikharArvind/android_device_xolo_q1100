@@ -19,7 +19,14 @@ LOCAL_PATH:= $(call my-dir)
 # HAL module implemenation stored in
 # hw/<COPYPIX_HARDWARE_MODULE_ID>.<ro.board.platform>.so
 
+<<<<<<< HEAD
 include $(CLEAR_VARS)
+=======
+LOCAL_SRC_FILES := lights.c
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
+LOCAL_SHARED_LIBRARIES := liblog
+LOCAL_CFLAGS := $(common_flags) -DLOG_TAG=\"qdlights\"
+>>>>>>> ccd4bbe... Fix button-backlight (support tricolor led bct3253)
 LOCAL_MODULE := lights.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 LOCAL_MODULE_TAGS := optional
