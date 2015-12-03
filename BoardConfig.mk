@@ -42,7 +42,7 @@ TARGET_CPU_SMP := true
 TARGET_CPU_VARIANT := krait
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/xolo/q1100
+TARGET_KERNEL_SOURCE := kernel/xolo/msm8226
 TARGET_KERNEL_CONFIG := q1100_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37
 BOARD_KERNEL_BASE := 0x00000000
